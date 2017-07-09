@@ -1,0 +1,9 @@
+.wrapper-tasklist footer  {
+   	color: #999;
+    background-color: #F9F9F9;
+    margin: 10px;
+    padding: 6px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+}

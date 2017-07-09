@@ -1,0 +1,40 @@
+.box-tag{
+	overflow: hidden;
+	width:100%;
+}
+.wrapper-tag {
+    display: flex;
+    flex-wrap: wrap;
+    font-size:14px;
+    overflow: scroll;
+}
+.wrapper-tag .item {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #646464;
+    padding: 8px 4px;
+}
+.wrapper-tag .item img {
+    width: 50px;
+    height: 50px;
+}
+.wrapper-tag.tab-type{
+	flex-wrap:nowrap;
+	background:#f4f5f7;
+	border-bottom:1px solid #dcdee0;
+}
+.wrapper-tag.tab-type .item{
+	min-width:25%;
+	padding:20px 0px;
+	order:2;
+}
+.wrapper-tag.tab-type .item:nth-child(1){
+	order:0;
+}
+.wrapper-tag.tab-type .item.search{
+	order:1;
+}
+.wrapper-tag.tab-type .item.active{
+	color:#006dd9;
+}

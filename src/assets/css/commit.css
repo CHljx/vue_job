@@ -1,0 +1,49 @@
+.commit-header{
+	background: #F8F8F8;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #505050;
+    border-bottom:1px solid #dcdee0;
+}
+.content{
+	padding:10px;
+}
+.wrapper-form{
+	margin:10px;
+}
+input[type=text]{
+	padding:10px;
+	width:100%;
+	box-sizing: border-box;
+	border-radius:6px;
+	outline: none;
+	border:1px solid #ddd;
+	font-size:18px;
+}
+.wrapper-file{
+	
+    background: #D0EEFF;
+    width: 50%;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #1e88c7;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+
+}
+.wrapper-file input[type=file]{
+	
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+
+}
