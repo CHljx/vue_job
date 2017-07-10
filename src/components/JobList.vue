@@ -45,7 +45,7 @@ export default{
 		renderList(oRes){
 			if(oRes&&oRes.code){
 				this.list=this.list.concat(oRes.data.list);
-				this.pageSize=oRes.data.pageSize;
+				this.pageSize=oRes.data.pageSize||1;
 				
 				if(document.documentElement.scrollHeight<document.documentElement.clientHeight&&this.pageSize>this.currentPage){
 

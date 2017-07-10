@@ -3,7 +3,7 @@
 
 		<div class="wrapper wrapper-tag" v-bind:class="[className]">
 			<a v-for="item in list" class="item" v-bind:class="{active:activeId==item.id,search:searchId==item.id}" v-on:click="changeType(item.id)">
-				<img v-if="showImg" v-bind:src="'http://xy.mianfeibang.cn/'+item.img"/>
+				<img v-if="showImg" v-bind:src="item.img"/>
 				<p>{{item.name}}</p>
 			</a>
 		</div>

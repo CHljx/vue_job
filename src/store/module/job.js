@@ -1,8 +1,8 @@
 import Vue from 'vue';
-import {HOST} from '../config';
-export const JOB_TYPE_ACTION=HOST+"static/jobType.json";
+import {HOST,DOMAIN_HOST} from '../config';
+export const JOB_TYPE_ACTION=DOMAIN_HOST+"index.php";
 export const JOB_TYPE="getJobType";
-export const JOB_LIST_ACTION=HOST+"static/jobList.json";
+export const JOB_LIST_ACTION=DOMAIN_HOST+"index.php";
 export const JOB_LIST="getJobList";
 export const JOB_APPLY_ACTION=HOST+"static/jobApply.json";
 export const JOB_APPLY="applyJob";
@@ -13,7 +13,13 @@ export default{
 		[JOB_TYPE]:()=>{
 			return new Promise((resovle,reject)=>{
 
-				Vue.http.get(JOB_TYPE_ACTION).then((oRes)=>{
+				Vue.http.jsonp(JOB_TYPE_ACTION,{
+					params:{
+						g:"Task",
+						m:"TaskMobile",
+						a:"api_task_type"
+					}
+				}).then((oRes)=>{
 					resovle(oRes.body)
 				},(oRes)=>{
 					reject({
@@ -24,7 +30,7 @@ export default{
 		},
 		[JOB_LIST]:({commit},params)=>{
 			return new Promise((resovle,reject)=>{
-				Vue.http.get(JOB_LIST_ACTION,{
+				Vue.http.jsonp(JOB_LIST_ACTION,{
 					params:params
 				}).then((oRes)=>{
 					resovle(oRes.body)

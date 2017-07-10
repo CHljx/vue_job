@@ -15,9 +15,11 @@ export default{
 		return {
 			isRefresh:0,
 			listParam:{
-				type:"search",
+				g:"Task",
+				m:"TaskMobile",
+				a:"api_task_list",
 				id:0
-			},
+			}
 		}
 	},
 	methods:{

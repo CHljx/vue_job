@@ -14,7 +14,9 @@ export default{
 	data(){
 		return {
 			listParam:{
-				type:'all'
+				g:"Task",
+				m:"TaskMobile",
+				a:"api_task_list"
 			}
 		}
 	},
