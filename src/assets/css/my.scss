@@ -1,0 +1,31 @@
+$myImgWidth:80px;
+$myImgHeight:80px;
+
+.wrapper-personInfo{
+	margin:20px 0px;
+}
+.item{
+    padding: 10px 15px;
+    overflow: auto;
+    line-height: 25px;
+}
+.wrapper-personInfo img{
+	width:$myImgWidth;
+	height:$myImgHeight;
+	border-radius:$myImgWidth;
+	float: left;
+}
+.wrapper-personInfo .item-right{
+	    margin-top: 15px;
+	margin-left: $myImgWidth+10;
+}
+.item-img{
+	width:30px;
+	height:30px;
+	float:left;
+	margin-right:10px;
+}
+.item-title{
+	height:30px;
+	line-height:30px;
+	}

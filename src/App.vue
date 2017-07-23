@@ -40,10 +40,10 @@ export default {
   				name:"任务大厅",class:"link-job",href:"#job"
   			},
   			{
-  				name:"我",class:"link-my"
+  				name:"我",class:"link-my",href:"#my"
   			},
   			{
-  				name:"更多",class:"link-more"
+  				name:"更多",class:"link-more",href:"#more"
   			}
   		]
   	}
@@ -51,6 +51,6 @@ export default {
 }
 </script>
 
-<style>
-@import './assets/css/base.css'
+<style lang="scss">
+@import './assets/css/base.scss'
 </style>

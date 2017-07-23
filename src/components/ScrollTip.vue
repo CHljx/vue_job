@@ -45,6 +45,6 @@ export default{
 	}
 }
 </script>
-<style scoped>
-@import "../assets/css/scrolltip.css"
+<style scoped lang="scss">
+@import "../assets/css/scrolltip.scss"
 </style>

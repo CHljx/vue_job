@@ -96,6 +96,6 @@ export default{
 	components:{JobItem}
 }
 </script>
-<style scoped>
-@import "../assets/css/joblist.css"
+<style scoped lang="scss">
+@import "../assets/css/joblist.scss"
 </style>

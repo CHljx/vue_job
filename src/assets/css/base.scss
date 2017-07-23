@@ -1,3 +1,5 @@
+$footerHeight:55px;
+$footerIconHeight:30px;
 html,body,div,p,ul,li,header,footer,section,article{
 	margin:0px;
 	padding:0px;
@@ -16,6 +18,15 @@ body{
 	padding-bottom: 70px;
 	padding-top:45px;
 }
+.border{
+  border-bottom:1px solid #ddd;
+}
+.marginLg{
+  margin:20px 0px;
+}
+.margin{
+margin:10px 0px;
+}
 .app-header{
 	background:#065fad;
 	height:45px;
@@ -30,7 +41,7 @@ body{
 	z-index:1;
 }
 .app-back{
-	background:url(../images/back.png);
+	background:url(./assets/images/back.png);
     width: 45px;
     height: 45px;
     background-size: 100%;
@@ -45,50 +56,50 @@ body{
 	left:0px;
 	right:0px;
 	bottom:0px;
-	height:60px;
+	height:$footerHeight;
 	text-align:center;
 	background: #f8f8f8;
-    font-size: 18px;
-    border-top: 1px solid #dcdee0;
+	font-size: 16px;
+	border-top: 1px solid #dcdee0;
 }
 .app-footer .item{
-	flex:1;
-	background-position: center 7px;
+    flex:1;
+    background-position: center 7px;
     background-repeat: no-repeat;
-    background-size: 35px 32.9px;
+    background-size: $footerIconHeight $footerIconHeight/50*47;
     display: block;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding-top: 39px;
+    padding-top:$footerIconHeight+4;
     color: #6b6a6b;
 }
 .app-footer .item.active{
 	color:#006dd9;
 }
 .link-index{
-	background:url(../images/home.png);
+	background:url(./assets/images/home.png);
 }
 .link-index.active{
-	background-image :url(../images/home_1.png);
+	background-image :url(./assets/images/home_1.png);
 }
 .link-job{
-	background:url(../images/job.png);
+	background:url(./assets/images/job.png);
 }
 .link-job.active{
-	background-image:url(../images/job_1.png);
+	background-image:url(./assets/images/job_1.png);
 }
 .link-my{
-	background:url(../images/my.png);
+	background:url(./assets/images/my.png);
 }
 .link-my.active{
-	background-image:url(../images/my_1.png);
+	background-image:url(./assets/images/my_1.png);
 }
 .link-more{
-	background:url(../images/more.png);
+	background:url(./assets/images/more.png);
 }
 .link-more.active{
-	background-image:url(../images/more_1.png);
+	background-image:url(./assets/images/more_1.png);
 }
 .wrapper {
     background: #fff;

@@ -90,6 +90,6 @@ export default{
 	}
 };
 </script>
-<style>
-@import "../assets/css/commit.css"
+<style lang="scss">
+@import "../assets/css/commit.scss"
 </style>

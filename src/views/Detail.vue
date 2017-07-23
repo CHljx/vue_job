@@ -67,6 +67,6 @@ export default{
 	components:{JobItem}
 }
 </script>
-<style>
-@import "../assets/css/jobdetail.css"
+<style lang="scss">
+@import "../assets/css/jobdetail.scss"
 </style>

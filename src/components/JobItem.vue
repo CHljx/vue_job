@@ -30,6 +30,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import "../assets/css/jobitem.css"
+<style scoped lang="scss">
+@import "../assets/css/jobitem.scss"
 </style>

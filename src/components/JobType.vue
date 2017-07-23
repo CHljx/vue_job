@@ -41,6 +41,6 @@ export default{
 	}
 }
 </script>
-<style scoped>
-@import "../assets/css/jobtype.css"
+<style scoped lang="scss">
+@import "../assets/css/jobtype.scss"
 </style>
