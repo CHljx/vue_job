@@ -40,7 +40,7 @@ export default {
   				name:"任务大厅",class:"link-job",href:"#job"
   			},
   			{
-  				name:"我",class:"link-my",href:"#my"
+  				name:"我",class:"link-my",href:"#login"
   			},
   			{
   				name:"更多",class:"link-more",href:"#more"
